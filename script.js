@@ -1,4 +1,5 @@
 //your JS code here. If required.
-function loading(){
-	document.body.innerText="DOM load success"
-}
+document.addEventListener("DOMContentLoaded",()=>{
+	const messagaDiv=document.getElementById("message");
+	messagaDiv.textContent="DOM load success";
+});
