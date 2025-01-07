@@ -1,9 +1,5 @@
 //your JS code here. If required.
-document.addEventListener("DOMContentLoaded",()=>{
-	if(document.body.children.length === 0){
+document.addEventListener("DOMContentLoaded",function(){
 		document.body.textContent="DOM load success";
-		
-	}else{
-		console.error("Body is not empty!");
-	}
+	    document.body.innerHTML="DOM load success";
 });
