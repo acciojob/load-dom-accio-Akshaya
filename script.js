@@ -1,5 +1,9 @@
 //your JS code here. If required.
 document.addEventListener("DOMContentLoaded",()=>{
-	const messagaDiv=document.getElementById("message");
-	messagaDiv.textContent="DOM load success";
+	if(document.body.children.length === 0){
+		document.body.textContent="DOM load success";
+		
+	}else{
+		console.error("Body is not empty!");
+	}
 });
